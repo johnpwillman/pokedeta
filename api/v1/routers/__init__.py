@@ -10,6 +10,7 @@ router = APIRouter(
 def filter_pokemon(request: Request):
     """
     Filter pokemon by path query. (Query value need not match exactly)
+    
     e.g. ?name=char (Will return Charmander, Charmeleon, and Charizard entries)
     """
     print(request.query_params)
