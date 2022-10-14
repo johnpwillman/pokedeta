@@ -60,7 +60,6 @@ export default {
       let typeq = typequery ? `&type=${typequery}` : ''
       let l = await fetch(baseURL + `v1/pokemon?${nameq}${typeq}`)
       let l_json = await l.json()
-      console.log(l_json)
       this.pokemons = l_json
     },
   },
