@@ -5,7 +5,7 @@
   >
     <v-app-bar-nav-icon variant="text" @click.stop="rail = !rail"></v-app-bar-nav-icon>
 
-    <v-toolbar-title>Pokedex</v-toolbar-title>
+    <v-toolbar-title>Pokedex, GO!</v-toolbar-title>
   </v-app-bar>
 
   <v-navigation-drawer
