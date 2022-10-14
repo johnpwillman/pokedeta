@@ -18,12 +18,16 @@
     <v-list
 
     >
-      <v-list-item 
+      <v-list-item
         prepend-icon="mdi-magnify"
       >
         <v-text-field
           v-model="namequery"
           label="Search by Name" />
+      </v-list-item>
+      <v-list-item
+        prepend-icon="mdi-fire"
+      >
         <v-text-field
           v-model="typequery"
           label="Search by type " />
@@ -44,8 +48,13 @@
 <script>
 import ListCard from './ListCard.vue'
 
-//const baseURL = "http://127.0.0.1:5173/"
-const baseURL = process.env.BASE_URL ? process.env.BASE_URL : "http://127.0.0.1:8000/"
+const baseURL = ''
+try {
+  const baseURL = process.env.BASE_URL
+}
+catch(err) {
+  console.log("Using default baseURL")
+}
 
 export default {
   name: 'Layout',

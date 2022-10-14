@@ -29,7 +29,7 @@
         </v-col>
 
         <v-col cols="6" class="text-right">
-          <img :src="pokemon.img" />
+          <img :src="pokemon.img.replace('http:', 'https:')" />
         </v-col>
       </v-row>
     </v-card-text>
